@@ -15,7 +15,7 @@ public class ConstantesString {
     public static final String EMAIL = "^[a-z0-9][a-z0-9._-]{0,29}(?<![._-])@[a-z0-9][a-z0-9.-]{0,19}(?<![.-])\\.[a-z]{2,6}$";    
     
     /** The Constant NOME. */
-    public static final String NOME = "^[A-ZÁÉÍÓÚÃÕÀÂÊÔ]([A-Za-zÁÉÍÓÚáéíóúÃÕãõÀàÂÊÔâêô]|[-'ç]|([ ](?![ ]))){0," + (ConstantesNumericas.TAMANHO_REGULAR - 2) + "}[A-Za-zÁÉÍÓÚáéíóúÃÕãõÀàÂÊÔâêô]$";
+    public static final String NOME = "[A-ZÁÉÍÓÚÃÕÀÂÊÔÇ]{1," + (ConstantesNumericas.TAMANHO_REGULAR) + "}";
     
     /** The Constant NOT_BLANK. */
     public static final String NOT_BLANK = ".*\\S.*";
@@ -45,7 +45,7 @@ public class ConstantesString {
     public static final String NUMERO_CONTA = APENAS_LETRA_NUMERAL + "{1," + ConstantesNumericas.MAX_NUMERO_CONTA + "}";
     
     /** The Constant RAZAO_SOCIAL. */
-    public static final String RAZAO_SOCIAL = "^[A-ZÁÉÍÓÚÃÕÀÂÊÔ]([A-Za-zÁÉÍÓÚáéíóúÃÕãõÀàÂÊÔâêô]|[&'çÇ\\-]|(?<!\\.)\\.|([ ](?![ ]))){0," + (ConstantesNumericas.TAMANHO_REGULAR - 2) + "}([A-Za-zÁÉÍÓÚáéíóúÃÕãõÀàÂÊÔâêô]|(?<!\\.)\\.)$";
+    public static final String RAZAO_SOCIAL = "([A-ZÁÉÍÓÚÃÕÀÂÊÔÇ]|[:\\)\\(&'\\.-]){1," + (ConstantesNumericas.TAMANHO_REGULAR) + "}";
     
     /**
      * Instantiates a new constantes string.
