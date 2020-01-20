@@ -14,6 +14,9 @@ public class TextDividedByValidador implements ConstraintValidator<TextDividedBy
 	
 	@Override
 	public boolean isValid(String value, ConstraintValidatorContext context) {
+		if (value == null) {
+			return true;
+		}
 		if (separator.length() > value.length()) {
 			return false;
 		}
