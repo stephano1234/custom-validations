@@ -92,6 +92,9 @@ public class MensagensErro {
     /** The Constant TIPO_CONTRATO_INVALIDO. */
     public static final String TIPO_CONTRATO_INVALIDO = "O campo deve conter um tipo de contrato válido.";
     
+    /** The Constant TIPO_UF_INVALIDO. */
+    public static final String TIPO_UF_INVALIDO = "O campo deve conter uma unidade federativa válida.";
+    
     /** The Constant TIPO_ENDERECO_INVALIDO. */
     public static final String TIPO_ENDERECO_INVALIDO = "O campo deve conter um tipo de endereço válido.";
     
