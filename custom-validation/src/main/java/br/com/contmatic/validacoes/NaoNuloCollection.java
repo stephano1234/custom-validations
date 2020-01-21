@@ -1,15 +1,13 @@
 package br.com.contmatic.validacoes;
 
-import javax.validation.Constraint;
-import javax.validation.Payload;
-
-import br.com.contmatic.validacoes.utilidades.MensagensErro;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import javax.validation.Constraint;
+import javax.validation.Payload;
 
 /**
  * The Interface CollectionComElementoNaoNulo.
@@ -24,7 +22,7 @@ public @interface NaoNuloCollection {
      *
      * @return the string
      */
-    String message() default MensagensErro.NULO_OU_COM_ELEMENTO_NULO;
+    String message() default "valor inválido";
 
     /**
      * Groups.

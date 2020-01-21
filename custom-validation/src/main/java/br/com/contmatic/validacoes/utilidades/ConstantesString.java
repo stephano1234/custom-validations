@@ -5,6 +5,9 @@ package br.com.contmatic.validacoes.utilidades;
  */
 public class ConstantesString {
         
+	/** The Constant ESPACO. */
+	public static final String ESPACO = " ";
+	
     /** The Constant NUMERAL. */
     public static final String NUMERAL = "[0-9]";
     
