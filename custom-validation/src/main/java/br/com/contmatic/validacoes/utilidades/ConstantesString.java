@@ -45,7 +45,7 @@ public class ConstantesString {
     public static final String NUMERO_CONTA = APENAS_LETRA_NUMERAL + "{1," + ConstantesNumericas.MAX_NUMERO_CONTA + "}";
     
     /** The Constant RAZAO_SOCIAL. */
-    public static final String RAZAO_SOCIAL = "([A-ZÁÉÍÓÚÃÕÀÂÊÔÇ ]|[:\\)\\(&'\\.-]){1," + (ConstantesNumericas.TAMANHO_REGULAR) + "}";
+    public static final String RAZAO_SOCIAL = "[A-ZÁÉÍÓÚÃÕÀÂÊÔÇ ]{1," + (ConstantesNumericas.TAMANHO_REGULAR) + "}";
     
     /**
      * Instantiates a new constantes string.
