@@ -1,28 +1,28 @@
 package br.com.contmatic.validacoes;
 
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import javax.validation.Constraint;
+import javax.validation.Payload;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import javax.validation.Constraint;
-import javax.validation.Payload;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * The Interface CollectionComElementoNaoNulo.
+ * The Interface CNPJbr.
  */
 @Target({ FIELD })
 @Retention(RUNTIME)
-@Constraint(validatedBy = NaoNuloCollectionValidador.class)
-public @interface NaoNuloCollection {
+@Constraint(validatedBy = CNPJValidador.class)
+public @interface CNPJ {
     
     /**
      * Message.
      *
      * @return the string
      */
-    String message() default "valor inválido";
+    String message() default "invalid";
 
     /**
      * Groups.

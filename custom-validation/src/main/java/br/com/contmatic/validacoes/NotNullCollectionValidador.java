@@ -8,7 +8,7 @@ import javax.validation.ConstraintValidatorContext;
 /**
  * The Class CollectionComElementoNaoNuloValidador.
  */
-public class NaoNuloCollectionValidador implements ConstraintValidator<NaoNuloCollection, Collection<?>> {
+public class NotNullCollectionValidador implements ConstraintValidator<NotNullCollection, Collection<?>> {
 	
 	/**
 	 * Checks if is valid.

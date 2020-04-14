@@ -1,15 +1,18 @@
 package br.com.contmatic.validacoes;
 
-import static br.com.contmatic.validacoes.utilidades.ConstantesNumericas.CNPJ;
-import static br.com.contmatic.validacoes.utilidades.ConstantesString.NUMERAL;
-
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 /**
  * The Class CNPJbrValidador.
  */
-public class CNPJbrValidador implements ConstraintValidator<CNPJbr, String> {
+public class CNPJValidador implements ConstraintValidator<CNPJ, String> {
+
+    /** The Constant CNPJ. */
+    public static final int CNPJ = 14;
+
+    /** The Constant NUMERAL. */
+    public static final String NUMERAL = "[0-9]";
 	
 	/**
 	 * Checks if is valid.

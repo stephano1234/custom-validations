@@ -1,30 +1,28 @@
 package br.com.contmatic.validacoes;
 
-import javax.validation.Constraint;
-import javax.validation.Payload;
-
-import br.com.contmatic.validacoes.utilidades.MensagensErro;
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import javax.validation.Constraint;
+import javax.validation.Payload;
 
 /**
- * The Interface CPFbr.
+ * The Interface CollectionComElementoNaoNulo.
  */
 @Target({ FIELD })
 @Retention(RUNTIME)
-@Constraint(validatedBy = CPFbrValidador.class)
-public @interface CPFbr {
+@Constraint(validatedBy = NotNullCollectionValidador.class)
+public @interface NotNullCollection {
     
     /**
      * Message.
      *
      * @return the string
      */
-    String message() default MensagensErro.CPF_INVALIDO;
+    String message() default "valor inválido";
 
     /**
      * Groups.

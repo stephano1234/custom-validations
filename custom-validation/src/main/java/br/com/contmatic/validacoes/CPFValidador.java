@@ -1,16 +1,19 @@
 package br.com.contmatic.validacoes;
 
-import static br.com.contmatic.validacoes.utilidades.ConstantesNumericas.CPF;
-import static br.com.contmatic.validacoes.utilidades.ConstantesString.NUMERAL;
-
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 /**
  * The Class CPFbrValidador.
  */
-public class CPFbrValidador implements ConstraintValidator<CPFbr, String> {
+public class CPFValidador implements ConstraintValidator<CPF, String> {
+
+	/** The Constant CPF. */
+	public static final int CPF = 11;
 	
+    /** The Constant NUMERAL. */
+    public static final String NUMERAL = "[0-9]";
+
 	/**
 	 * Checks if is valid.
 	 *

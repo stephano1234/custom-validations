@@ -11,8 +11,8 @@ import javax.validation.Payload;
 
 @Retention(RUNTIME)
 @Target(FIELD)
-@Constraint(validatedBy = NaoNuloValidador.class)
-public @interface NaoNulo {
+@Constraint(validatedBy = NotNullValidador.class)
+public @interface NotNull {
 
 	String message() default "null value";
 	
